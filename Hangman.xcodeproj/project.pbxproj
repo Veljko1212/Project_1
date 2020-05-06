@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		839F131124633A4000354A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131024633A4000354A7B /* AppDelegate.swift */; };
 		839F131324633A4000354A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131224633A4000354A7B /* SceneDelegate.swift */; };
-		839F131524633A4000354A7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131424633A4000354A7B /* ViewController.swift */; };
+		839F131524633A4000354A7B /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131424633A4000354A7B /* RootVC.swift */; };
 		839F131824633A4000354A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F131624633A4000354A7B /* Main.storyboard */; };
 		839F131A24633A4200354A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F131924633A4200354A7B /* Assets.xcassets */; };
 		839F131D24633A4200354A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F131B24633A4200354A7B /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		839F130D24633A4000354A7B /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839F131024633A4000354A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839F131224633A4000354A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		839F131424633A4000354A7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		839F131424633A4000354A7B /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		839F131724633A4000354A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		839F131924633A4200354A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839F131C24633A4200354A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		839F130F24633A4000354A7B /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
-				839F131024633A4000354A7B /* AppDelegate.swift */,
-				839F131224633A4000354A7B /* SceneDelegate.swift */,
-				839F131424633A4000354A7B /* ViewController.swift */,
-				839F131624633A4000354A7B /* Main.storyboard */,
-				839F131924633A4200354A7B /* Assets.xcassets */,
-				839F131B24633A4200354A7B /* LaunchScreen.storyboard */,
-				839F131E24633A4200354A7B /* Info.plist */,
+				839F132424633A4F00354A7B /* AppDelegate */,
+				839F132524633A6000354A7B /* Controllers */,
+				839F132724633A9500354A7B /* Resources */,
+				839F132624633A8A00354A7B /* Views */,
 			);
 			path = Hangman;
+			sourceTree = "<group>";
+		};
+		839F132424633A4F00354A7B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				839F131024633A4000354A7B /* AppDelegate.swift */,
+				839F131224633A4000354A7B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		839F132524633A6000354A7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				839F131424633A4000354A7B /* RootVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		839F132624633A8A00354A7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				839F131624633A4000354A7B /* Main.storyboard */,
+				839F131B24633A4200354A7B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		839F132724633A9500354A7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				839F131924633A4200354A7B /* Assets.xcassets */,
+				839F131E24633A4200354A7B /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839F131524633A4000354A7B /* ViewController.swift in Sources */,
+				839F131524633A4000354A7B /* RootVC.swift in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7J2BZ7AMP;
-				INFOPLIST_FILE = Hangman/Info.plist;
+				INFOPLIST_FILE = Hangman/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7J2BZ7AMP;
-				INFOPLIST_FILE = Hangman/Info.plist;
+				INFOPLIST_FILE = Hangman/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
