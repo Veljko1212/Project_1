@@ -15,7 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let categories = loadJson(from: "Categories", ofType: "json")
+        print(categories)
         return true
+    }
+    
+    func loadJson(from fileName:String , ofType type:String) -> [Category] {
+        if let path = Bundle.main.path(forResource: fileName, ofType: type) {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                return try JSONDecoder().decode([Category].self, from: data)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return []
     }
 
     // MARK: UISceneSession Lifecycle
