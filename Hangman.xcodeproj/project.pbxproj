@@ -13,6 +13,7 @@
 		839F131824633A4000354A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F131624633A4000354A7B /* Main.storyboard */; };
 		839F131A24633A4200354A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F131924633A4200354A7B /* Assets.xcassets */; };
 		839F131D24633A4200354A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F131B24633A4200354A7B /* LaunchScreen.storyboard */; };
+		839F135524646C3300354A7B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F135424646C3300354A7B /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		839F131924633A4200354A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839F131C24633A4200354A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839F131E24633A4200354A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839F135424646C3300354A7B /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		839F130F24633A4000354A7B /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				839F135224646C1300354A7B /* CustomClasses */,
 				839F132424633A4F00354A7B /* AppDelegate */,
 				839F132524633A6000354A7B /* Controllers */,
 				839F132724633A9500354A7B /* Resources */,
@@ -97,6 +100,22 @@
 				839F131E24633A4200354A7B /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		839F135224646C1300354A7B /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				839F135324646C2300354A7B /* UIClasses */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		839F135324646C2300354A7B /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				839F135424646C3300354A7B /* CustomButton.swift */,
+			);
+			path = UIClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839F135524646C3300354A7B /* CustomButton.swift in Sources */,
 				839F131524633A4000354A7B /* RootVC.swift in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
