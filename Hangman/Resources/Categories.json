@@ -1,0 +1,510 @@
+
+[
+    {
+        
+        "name":"Animals",
+        "image":"Animals",
+        
+        "words": [
+            
+            {
+                "title" : "ALLIGATOR",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "BIRD",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "DOG",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "DOLPHIN",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            }
+            
+        ]
+    },
+    
+    {
+        
+        "name":"Countries",
+        "image":"Countries",
+        
+        "words": [
+            
+            {
+                "title" : "ARGENTINA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "ARMENIA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "AUSTRALIA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "AUSTRIA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            }
+            
+        ]
+    },
+    
+    {
+        "name":"Cities",
+        "image":"Cities",
+        
+        "words": [
+            
+            {
+                "title" : "LONDON",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "NEW YORK",
+                "hidden" : "⟷⟷⟷ ⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "TOKYO",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "PARIS",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Clothes",
+        "image":"Clothes",
+        
+        "words": [
+            
+            {
+                "title" : "BELT",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "BOOTS",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "CAP",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "COAT",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Fruits",
+        "image":"Fruits",
+        
+        "words": [
+            
+            {
+                "title" : "APPLE",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "APRICOT",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "AVOCADO",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "BANANA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 3
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Tools",
+        "image":"Tools",
+        
+        "words": [
+            
+            {
+                "title" : "HAMMER",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "MALLET",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "HACKSAW",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "LEVEL",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 3
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Computers",
+        "image":"Computers",
+        
+        "words": [
+            
+            {
+                "title" : "COMPUTER",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 8
+            },
+            
+            {
+                "title" : "MONITOR",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "CASE",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "MOTHERBOARD",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 9
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Nouns",
+        "image":"Nouns",
+        
+        "words": [
+            
+            {
+                "title" : "PEOPLE",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "HISTORY",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "WAY",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "ART",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Chemical",
+        "image":"Chemical",
+        
+        "words": [
+            
+            {
+                "title" : "HYDROGEN",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 8
+            },
+            
+            {
+                "title" : "HELIUM",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "LITHIUM",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "BERYLLIUM",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 8
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Feelings",
+        "image":"Feelings",
+        
+        "words": [
+            
+            {
+                "title" : "BLISSFUL",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "BRAVE",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "CAREFUL",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "CAUTIOUS",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            }
+            
+        ]
+        
+    },
+    
+    {
+        "name":"Math",
+        "image":"Math",
+        
+        "words": [
+            
+            {
+                "title" : "CURVE",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "ARC",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "CIRCLE",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "RADIUS",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            }
+        ]
+        
+    },
+    
+    {
+        "name":"Sports",
+        "image":"Sports",
+        
+        "words": [
+            
+            {
+                "title" : "ATHLETICS",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 8
+            },
+            
+            {
+                "title" : "BASEBALL",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "BASKETBALL",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            },
+            
+            {
+                "title" : "BOWLING",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 7
+            }
+        ]
+        
+    },
+    
+    {
+        "name":"Cars",
+        "image":"Cars",
+        
+        "words": [
+            
+            {
+                "title" : "VOLKSWAGEN",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 10
+            },
+            
+            {
+                "title" : "TOYOTA",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "MERCEDES",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "FORD",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            }
+        ]
+        
+    },
+    
+    {
+        "name":"Names",
+        "image":"Names",
+        
+        "words": [
+            
+            {
+                "title" : "CHASE",
+                "hidden" : "⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            },
+            
+            {
+                "title" : "SLY",
+                "hidden" : "⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "TIFFANY",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "TANNER",
+                "hidden" : "⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 5
+            }
+        ]
+        
+    },
+    
+    {
+        "name":"Random",
+        "image":"Random",
+        
+        "words": [
+            
+            {
+                "title" : "IRIS",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 3
+            },
+            
+            {
+                "title" : "FOOTBALL",
+                "hidden" : "⟷⟷⟷⟷⟷⟷⟷⟷",
+                "uniqueCount" : 6
+            },
+            
+            {
+                "title" : "GOLF",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            },
+            
+            {
+                "title" : "BIRD",
+                "hidden" : "⟷⟷⟷⟷",
+                "uniqueCount" : 4
+            }
+        ]
+    }
+    
+]
+
+
+
