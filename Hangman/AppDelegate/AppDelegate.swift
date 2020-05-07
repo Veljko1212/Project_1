@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let coreDataStack = CoreDataStack(modelName: "Hangman")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let categories = loadJson(from: "Categories", ofType: "json")
-        print(categories)
+        saveJsonToCoreData(toSave: categories)
+        let categoriesCD = coreDataStack.fetch(object: CategoryCD.self)
+        print(categoriesCD)
         return true
     }
     
@@ -30,6 +33,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         return []
+    }
+    
+    func saveJsonToCoreData(toSave categoryArray:[Category]) {
+        
+        let fetchRequest: NSFetchRequest<CategoryCD> = CategoryCD.fetchRequest()
+        let count = try! coreDataStack.managedContext.count(for: fetchRequest)
+        
+        if count > 0 {
+            return
+        }
+       
+        for category in categoryArray {
+            let categoryCD = CategoryCD(context: coreDataStack.managedContext)
+            categoryCD.name = category.name
+            categoryCD.image = UIImage(named: category.image)?.pngData()
+            
+            let words = categoryCD.words?.mutableCopy() as? NSMutableSet
+            
+            for word in category.words {
+                let item = WordCD(context: coreDataStack.managedContext)
+                item.title = word.title
+                item.uniqueCount = word.uniqueCount
+                item.hidden = word.hidden
+                
+                words?.add(item)
+                
+            }
+           categoryCD.words = words
+        }
+        
+        coreDataStack.saveContext()
+        
     }
 
     // MARK: UISceneSession Lifecycle
