@@ -17,6 +17,7 @@
 		839F1357246474D200354A7B /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 839F1356246474D200354A7B /* Categories.json */; };
 		839F135B246476CF00354A7B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1359246476CF00354A7B /* Category.swift */; };
 		839F135C246476CF00354A7B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F135A246476CF00354A7B /* Word.swift */; };
+		839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839F135D24647A2A00354A7B /* Hangman.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		839F1356246474D200354A7B /* Categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 		839F1359246476CF00354A7B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		839F135A246476CF00354A7B /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		839F135E24647A2A00354A7B /* Hangman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hangman.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				839F131924633A4200354A7B /* Assets.xcassets */,
 				839F1356246474D200354A7B /* Categories.json */,
 				839F131E24633A4200354A7B /* Info.plist */,
+				839F135D24647A2A00354A7B /* Hangman.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				839F135524646C3300354A7B /* CustomButton.swift in Sources */,
 				839F135B246476CF00354A7B /* Category.swift in Sources */,
 				839F131524633A4000354A7B /* RootVC.swift in Sources */,
+				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 				839F135C246476CF00354A7B /* Word.swift in Sources */,
@@ -410,6 +414,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		839F135D24647A2A00354A7B /* Hangman.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				839F135E24647A2A00354A7B /* Hangman.xcdatamodel */,
+			);
+			currentVersion = 839F135E24647A2A00354A7B /* Hangman.xcdatamodel */;
+			path = Hangman.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 839F130524633A4000354A7B /* Project object */;
 }

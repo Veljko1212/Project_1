@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F72f" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CategoryCD" representedClassName="CategoryCD" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WordCD" inverseName="category" inverseEntity="WordCD"/>
+    </entity>
+    <entity name="WordCD" representedClassName="WordCD" syncable="YES" codeGenerationType="class">
+        <attribute name="hidden" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="uniqueCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryCD" inverseName="words" inverseEntity="CategoryCD"/>
+    </entity>
+    <elements>
+        <element name="CategoryCD" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="WordCD" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>
