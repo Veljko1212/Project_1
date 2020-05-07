@@ -1,0 +1,45 @@
+# Temp files created by most text editors.
+*~
+# Merge files created by git.
+*.orig
+# Byte compiled Python modules.
+*.pyc
+# vim swap files
+.*.sw[a-z]
+.sw?
+
+#==============================================================================#
+# Explicit files to ignore (only matches one).
+#==============================================================================#
+Brewfile.lock.json
+cscope.files
+cscope.out
+.vimrc
+tags
+
+#==============================================================================#
+# Directories to ignore (do not add trailing '/'s, they skip symlinks).
+#==============================================================================#
+# Generated docs
+docs/_build
+
+# Finder metadata
+.DS_Store
+
+# Visual Studio metadata
+.vs
+
+# clangd
+.clangd
+
+#==============================================================================#
+# Ignore CMake temporary files
+#==============================================================================#
+CMakeCache.txt
+CMakeFiles
+.atom-build.json
+
+#==============================================================================#
+# Ignore compile database
+#==============================================================================#
+compile_commands.json
