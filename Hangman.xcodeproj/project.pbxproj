@@ -18,6 +18,10 @@
 		839F135B246476CF00354A7B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1359246476CF00354A7B /* Category.swift */; };
 		839F135C246476CF00354A7B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F135A246476CF00354A7B /* Word.swift */; };
 		839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 839F135D24647A2A00354A7B /* Hangman.xcdatamodeld */; };
+		839F13692464858D00354A7B /* CategoryCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13652464858D00354A7B /* CategoryCD+CoreDataClass.swift */; };
+		839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13662464858D00354A7B /* CategoryCD+CoreDataProperties.swift */; };
+		839F136B2464858D00354A7B /* WordCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13672464858D00354A7B /* WordCD+CoreDataClass.swift */; };
+		839F136C2464858D00354A7B /* WordCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13682464858D00354A7B /* WordCD+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		839F1359246476CF00354A7B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		839F135A246476CF00354A7B /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		839F135E24647A2A00354A7B /* Hangman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hangman.xcdatamodel; sourceTree = "<group>"; };
+		839F13652464858D00354A7B /* CategoryCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryCD+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		839F13662464858D00354A7B /* CategoryCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryCD+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		839F13672464858D00354A7B /* WordCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCD+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		839F13682464858D00354A7B /* WordCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCD+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		839F130F24633A4000354A7B /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				839F13642464854A00354A7B /* CoreData */,
 				839F132424633A4F00354A7B /* AppDelegate */,
 				839F132524633A6000354A7B /* Controllers */,
 				839F135224646C1300354A7B /* CustomClasses */,
@@ -136,6 +145,17 @@
 				839F135A246476CF00354A7B /* Word.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		839F13642464854A00354A7B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				839F13652464858D00354A7B /* CategoryCD+CoreDataClass.swift */,
+				839F13662464858D00354A7B /* CategoryCD+CoreDataProperties.swift */,
+				839F13672464858D00354A7B /* WordCD+CoreDataClass.swift */,
+				839F13682464858D00354A7B /* WordCD+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +232,14 @@
 			files = (
 				839F135524646C3300354A7B /* CustomButton.swift in Sources */,
 				839F135B246476CF00354A7B /* Category.swift in Sources */,
+				839F13692464858D00354A7B /* CategoryCD+CoreDataClass.swift in Sources */,
 				839F131524633A4000354A7B /* RootVC.swift in Sources */,
+				839F136B2464858D00354A7B /* WordCD+CoreDataClass.swift in Sources */,
+				839F136C2464858D00354A7B /* WordCD+CoreDataProperties.swift in Sources */,
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
+				839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */,
 				839F135C246476CF00354A7B /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
