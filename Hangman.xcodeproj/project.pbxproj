@@ -27,6 +27,7 @@
 		839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13722465A3C700354A7B /* CollectionViewCell.swift */; };
 		839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839F13732465A3C700354A7B /* CollectionViewCell.xib */; };
 		839F13782465A95800354A7B /* OnePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F13762465A95800354A7B /* OnePlayer.storyboard */; };
+		839F13852465B82000354A7B /* GameStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13842465B82000354A7B /* GameStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		839F13722465A3C700354A7B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		839F13732465A3C700354A7B /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		839F13772465A95800354A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnePlayer.storyboard; sourceTree = "<group>"; };
+		839F13842465B82000354A7B /* GameStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		839F135224646C1300354A7B /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				839F13832465B80E00354A7B /* HelperClasses */,
 				839F135324646C2300354A7B /* UIClasses */,
 			);
 			path = CustomClasses;
@@ -179,6 +182,14 @@
 				839F13732465A3C700354A7B /* CollectionViewCell.xib */,
 			);
 			path = CategoryViewCell;
+			sourceTree = "<group>";
+		};
+		839F13832465B80E00354A7B /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				839F13842465B82000354A7B /* GameStorage.swift */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				839F135524646C3300354A7B /* CustomButton.swift in Sources */,
+				839F13852465B82000354A7B /* GameStorage.swift in Sources */,
 				839F135B246476CF00354A7B /* Category.swift in Sources */,
 				839F13692464858D00354A7B /* CategoryCD+CoreDataClass.swift in Sources */,
 				839F136E2464878700354A7B /* CoreDataStack.swift in Sources */,

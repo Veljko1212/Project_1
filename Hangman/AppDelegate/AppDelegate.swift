@@ -18,8 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let categories = loadJson(from: "Categories", ofType: "json")
         saveJsonToCoreData(toSave: categories)
-        let categoriesCD = coreDataStack.fetch(object: CategoryCD.self)
-        print(categoriesCD)
+        GameStorage.shared.categories = coreDataStack.fetch(object: CategoryCD.self)
         return true
     }
     
