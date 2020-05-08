@@ -34,12 +34,16 @@ extension CategoryVC: UICollectionViewDataSource {
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return GameStorage.shared.categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CollectionViewCell
+        let group = GameStorage.shared.categories[indexPath.row]
+        
+        cell.imageView.image = UIImage(data: group.image!)
+        cell.title.text = group.name
         
         return cell
     }
