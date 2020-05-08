@@ -28,6 +28,7 @@
 		839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839F13732465A3C700354A7B /* CollectionViewCell.xib */; };
 		839F13782465A95800354A7B /* OnePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F13762465A95800354A7B /* OnePlayer.storyboard */; };
 		839F13852465B82000354A7B /* GameStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13842465B82000354A7B /* GameStorage.swift */; };
+		839F13892465C53500354A7B /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13882465C53500354A7B /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		839F13732465A3C700354A7B /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		839F13772465A95800354A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OnePlayer.storyboard; sourceTree = "<group>"; };
 		839F13842465B82000354A7B /* GameStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStorage.swift; sourceTree = "<group>"; };
+		839F13882465C53500354A7B /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		839F132524633A6000354A7B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				839F13882465C53500354A7B /* GameVC.swift */,
 				839F131424633A4000354A7B /* RootVC.swift */,
 				839F136F2465A0A200354A7B /* CategoryVC.swift */,
 			);
@@ -278,6 +281,7 @@
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */,
+				839F13892465C53500354A7B /* GameVC.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 				839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */,
 				839F135C246476CF00354A7B /* Word.swift in Sources */,
