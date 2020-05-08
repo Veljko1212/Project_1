@@ -10,6 +10,8 @@ import UIKit
 
 class GameVC: UIViewController {
     
+    var gameStrategy:GuessingStrategy!
+    
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet var images: [UIImageView]!
     @IBOutlet weak var display: UILabel!
@@ -17,6 +19,7 @@ class GameVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(gameStrategy.title)
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {

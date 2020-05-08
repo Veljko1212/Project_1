@@ -11,6 +11,7 @@ import UIKit
 class CategoryVC: UIViewController {
     
     let cellIdentifier = "CollectionViewCell"
+    var selectedStrategy:GuessingStrategy!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -24,6 +25,16 @@ class CategoryVC: UIViewController {
     
     @IBAction func menuButton(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toGame" {
+            if let gameVC = segue.destination as? GameVC {
+                if let normalStragy = selectedStrategy as? NormalStrategy {
+                    gameVC.gameStrategy = normalStragy
+                }
+            }
+        }
     }
     
 }
@@ -47,6 +58,28 @@ extension CategoryVC: UICollectionViewDataSource {
         
         return cell
     }
+    
+}
+
+extension CategoryVC: UICollectionViewDelegate {
+    
+    // MARK: - UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let category = GameStorage.shared.getCategoryFromCategoryCD(indexPath: indexPath)
+        
+        let alert = UIAlertController(title: "Chose difficulty", message: "", preferredStyle: .alert)
+        let normal = UIAlertAction(title: "Normal", style: .default) { (_) in
+            
+            self.selectedStrategy = NormalStrategy(category: category)
+            self.performSegue(withIdentifier: "toGame", sender: nil)
+        }
+        alert.addAction(normal)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
     
 }
 

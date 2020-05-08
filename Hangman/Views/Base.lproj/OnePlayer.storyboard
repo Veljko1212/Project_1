@@ -61,7 +61,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Cun-ej-awU" id="8wv-M4-mCq"/>
-                        <segue destination="egq-a7-sRK" kind="show" id="iix-TG-p60"/>
+                        <segue destination="egq-a7-sRK" kind="show" identifier="toGame" id="iix-TG-p60"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDp-PN-iJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
