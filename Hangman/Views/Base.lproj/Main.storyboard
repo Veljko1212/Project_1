@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +37,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="eBE-cD-d1d" kind="show" id="Bid-gy-aNG"/>
+                                            <segue destination="1B6-hO-GLv" kind="show" id="Bid-gy-aNG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxh-BZ-9E5" customClass="CustomButton" customModule="Hangman" customModuleProvider="target">
@@ -123,68 +122,18 @@
             </objects>
             <point key="canvasLocation" x="774" y="113"/>
         </scene>
-        <!--Select Category-->
-        <scene sceneID="YSd-3f-vxv">
+        <!--OnePlayer-->
+        <scene sceneID="MBG-HX-Lx1">
             <objects>
-                <viewController id="eBE-cD-d1d" customClass="CategoryVC" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NB3-5B-4WX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-ej-awU">
-                                <rect key="frame" x="41.5" y="67" width="331" height="674"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gBb-Qc-YHg">
-                                    <size key="itemSize" width="112" height="130"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="1Wu-4c-e7I" customClass="CollectionViewCell" customModule="Hangman" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tO6-oQ-IHC">
-                                            <rect key="frame" x="0.0" y="0.0" width="112" height="130"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="112" height="130"/>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="eBE-cD-d1d" id="Km6-aY-5ff"/>
-                                    <outlet property="delegate" destination="eBE-cD-d1d" id="CWP-7K-aEi"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Cun-ej-awU" firstAttribute="height" secondItem="NB3-5B-4WX" secondAttribute="height" multiplier="0.8" id="FsF-k0-s9H"/>
-                            <constraint firstItem="Cun-ej-awU" firstAttribute="centerY" secondItem="5DH-6y-nxO" secondAttribute="centerY" id="Ozi-PT-9rf"/>
-                            <constraint firstItem="Cun-ej-awU" firstAttribute="centerX" secondItem="5DH-6y-nxO" secondAttribute="centerX" id="Shc-B2-mDi"/>
-                            <constraint firstItem="Cun-ej-awU" firstAttribute="width" secondItem="NB3-5B-4WX" secondAttribute="width" multiplier="0.8" id="Ypb-Sx-jNa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5DH-6y-nxO"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Select Category" id="Gve-qb-xqh">
-                        <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left.fill" catalog="system" id="SNB-tm-bci">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="menuButton:" destination="eBE-cD-d1d" id="tn2-Dh-QTp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="collectionView" destination="Cun-ej-awU" id="8wv-M4-mCq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mDp-PN-iJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="OnePlayer" id="1B6-hO-GLv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yzC-TU-Apn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5O-vd-IT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="113"/>
+            <point key="canvasLocation" x="1714" y="113"/>
         </scene>
     </scenes>
     <resources>
         <image name="Hangman" width="468" height="111"/>
-        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
     </resources>
 </document>
