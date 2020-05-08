@@ -23,6 +23,9 @@
 		839F136B2464858D00354A7B /* WordCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13672464858D00354A7B /* WordCD+CoreDataClass.swift */; };
 		839F136C2464858D00354A7B /* WordCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13682464858D00354A7B /* WordCD+CoreDataProperties.swift */; };
 		839F136E2464878700354A7B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F136D2464878700354A7B /* CoreDataStack.swift */; };
+		839F13702465A0A200354A7B /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F136F2465A0A200354A7B /* CategoryVC.swift */; };
+		839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13722465A3C700354A7B /* CollectionViewCell.swift */; };
+		839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839F13732465A3C700354A7B /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		839F13672464858D00354A7B /* WordCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCD+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		839F13682464858D00354A7B /* WordCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCD+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		839F136D2464878700354A7B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		839F136F2465A0A200354A7B /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		839F13722465A3C700354A7B /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		839F13732465A3C700354A7B /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				839F131424633A4000354A7B /* RootVC.swift */,
+				839F136F2465A0A200354A7B /* CategoryVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 		839F132624633A8A00354A7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				839F13712465A3B300354A7B /* CategoryViewCell */,
 				839F131624633A4000354A7B /* Main.storyboard */,
 				839F131B24633A4200354A7B /* LaunchScreen.storyboard */,
 			);
@@ -159,6 +167,15 @@
 				839F136D2464878700354A7B /* CoreDataStack.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		839F13712465A3B300354A7B /* CategoryViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				839F13722465A3C700354A7B /* CollectionViewCell.swift */,
+				839F13732465A3C700354A7B /* CollectionViewCell.xib */,
+			);
+			path = CategoryViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 				839F1357246474D200354A7B /* Categories.json in Resources */,
 				839F131A24633A4200354A7B /* Assets.xcassets in Resources */,
 				839F131824633A4000354A7B /* Main.storyboard in Resources */,
+				839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +258,10 @@
 				839F131524633A4000354A7B /* RootVC.swift in Sources */,
 				839F136B2464858D00354A7B /* WordCD+CoreDataClass.swift in Sources */,
 				839F136C2464858D00354A7B /* WordCD+CoreDataProperties.swift in Sources */,
+				839F13702465A0A200354A7B /* CategoryVC.swift in Sources */,
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
+				839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 				839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */,
 				839F135C246476CF00354A7B /* Word.swift in Sources */,
