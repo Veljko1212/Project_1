@@ -34,6 +34,11 @@ class CategoryVC: UIViewController {
                     gameVC.gameStrategy = normalStragy
                     normalStragy.delegate = gameVC
                 }
+                else if let easyStrategy = selectedStrategy as? EasyStrategy {
+                    gameVC.gameStrategy = easyStrategy
+                    easyStrategy.delegate = gameVC
+                }
+                
             }
         }
     }
@@ -75,12 +80,17 @@ extension CategoryVC: UICollectionViewDelegate {
             self.selectedStrategy = NormalStrategy(category: category)
             self.performSegue(withIdentifier: "toGame", sender: nil)
         }
+        let easy = UIAlertAction(title: "Easy", style: .default) { (_) in
+            
+            self.selectedStrategy = EasyStrategy(category: category)
+            self.performSegue(withIdentifier: "toGame", sender: nil)
+        }
+        
         alert.addAction(normal)
+        alert.addAction(easy)
         self.present(alert, animated: true, completion: nil)
         
     }
-    
-    
     
 }
 

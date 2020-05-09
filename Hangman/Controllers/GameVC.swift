@@ -49,11 +49,18 @@ class GameVC: UIViewController {
     }
     
     private func clearUI() {
-        buttons.forEach({
-            $0.isEnabled = true
-            $0.setTitleColor(.white, for: .normal)
-        })
+        let easyButton = String(result.first(where: {$0 != " " && $0 != "⟷"}) ?? "0")
         
+        buttons.forEach({
+            if $0.currentTitle == easyButton {
+                $0.isEnabled = false
+                $0.setTitleColor(.red, for: .disabled)
+            }
+            else {
+                $0.isEnabled = true
+                $0.setTitleColor(.white, for: .normal)
+            }
+        })
         images.forEach({$0.isHidden = true})
         self.result = self.gameStrategy.result
     }
