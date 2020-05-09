@@ -80,24 +80,25 @@ class GameVC: UIViewController {
 extension GameVC: StrategyDelegate {
     
     func gameWon(_ currentWord: Word) {
-        print("Game won , word is \(currentWord.title)")
-        self.gameStrategy.setupQuestion {
-            self.clearUI()
+        self.setupAlert(type: .win, word: currentWord) {
+            self.gameStrategy.setupQuestion {
+                self.clearUI()
+            }
         }
-        
     }
     
     func gameLost(_ currentWord: Word) {
-        print("Game lost , word is \(currentWord.title)")
-        self.gameStrategy.setupQuestion {
-            self.clearUI()
+        self.setupAlert(type: .lose, word: currentWord) {
+            self.gameStrategy.setupQuestion {
+                self.clearUI()
+            }
         }
     }
     
     func passedAll() {
-        print("u have passed all the words , please go back")
-        self.navigationController?.popViewController(animated: true)
-        
+        self.setupAlert(type: .passed, word: nil) {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
 }
