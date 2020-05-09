@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		834C799424672CBD00A70C14 /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C799324672CBD00A70C14 /* StatisticVC.swift */; };
 		834C79962467337A00A70C14 /* StatsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79952467337A00A70C14 /* StatsServices.swift */; };
+		834C799A24673FDF00A70C14 /* PieChartViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */; };
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
@@ -46,6 +47,7 @@
 		392B0F686D46F0D77701D5A6 /* Pods-Hangman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangman.release.xcconfig"; path = "Target Support Files/Pods-Hangman/Pods-Hangman.release.xcconfig"; sourceTree = "<group>"; };
 		834C799324672CBD00A70C14 /* StatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
 		834C79952467337A00A70C14 /* StatsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsServices.swift; sourceTree = "<group>"; };
+		834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewExtensions.swift; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				838F1BA02465DB95006A12D8 /* StringExtensions.swift */,
 				838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */,
 				838F1BA82466BC43006A12D8 /* UIAplicationExtensions.swift */,
+				834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */,
 			);
 			path = CustomExtensions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				839F131524633A4000354A7B /* RootVC.swift in Sources */,
 				839F136B2464858D00354A7B /* WordCD+CoreDataClass.swift in Sources */,
 				839F136C2464858D00354A7B /* WordCD+CoreDataProperties.swift in Sources */,
+				834C799A24673FDF00A70C14 /* PieChartViewExtensions.swift in Sources */,
 				839F13702465A0A200354A7B /* CategoryVC.swift in Sources */,
 				839F138C2465C90D00354A7B /* GuessingStrategy.swift in Sources */,
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,

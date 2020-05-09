@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let categories = loadJson(from: "Categories", ofType: "json")
         saveJsonToCoreData(toSave: categories)
         GameStorage.shared.categories = coreDataStack.fetch(object: CategoryCD.self)
+        StatsServices.shared.loadStats()
         return true
     }
     

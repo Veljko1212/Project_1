@@ -320,7 +320,7 @@
                                             <constraint firstItem="Cmb-MV-2w7" firstAttribute="width" secondItem="GG8-Rr-o8A" secondAttribute="width" id="kmZ-SK-9jH"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-P0-ot1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J4-P0-ot1" customClass="PieChartView" customModule="Charts">
                                         <rect key="frame" x="0.0" y="282" width="373" height="417"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -348,6 +348,7 @@
                         <outlet property="gamesLost" destination="f7P-oO-yX4" id="15p-Ub-Tso"/>
                         <outlet property="gamesPlayed" destination="M5c-Us-QG1" id="O6u-c3-fNu"/>
                         <outlet property="gamesWon" destination="dKX-xc-0pn" id="CN9-P3-uBK"/>
+                        <outlet property="pieView" destination="6J4-P0-ot1" id="W3s-BS-Gb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv8-Bd-SEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
