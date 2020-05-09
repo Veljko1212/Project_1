@@ -37,9 +37,12 @@
 		839F13892465C53500354A7B /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F13882465C53500354A7B /* GameVC.swift */; };
 		839F138C2465C90D00354A7B /* GuessingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F138B2465C90D00354A7B /* GuessingStrategy.swift */; };
 		839F138E2465C97200354A7B /* NormalStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F138D2465C97200354A7B /* NormalStrategy.swift */; };
+		CF8E352B531C57148A089233 /* Pods_Hangman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1A58E2B193FC0152DEBA3A /* Pods_Hangman.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D60A897D8301BA7A389629 /* Pods-Hangman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangman.debug.xcconfig"; path = "Target Support Files/Pods-Hangman/Pods-Hangman.debug.xcconfig"; sourceTree = "<group>"; };
+		392B0F686D46F0D77701D5A6 /* Pods-Hangman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hangman.release.xcconfig"; path = "Target Support Files/Pods-Hangman/Pods-Hangman.release.xcconfig"; sourceTree = "<group>"; };
 		834C799324672CBD00A70C14 /* StatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		839F13882465C53500354A7B /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		839F138B2465C90D00354A7B /* GuessingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessingStrategy.swift; sourceTree = "<group>"; };
 		839F138D2465C97200354A7B /* NormalStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalStrategy.swift; sourceTree = "<group>"; };
+		DB1A58E2B193FC0152DEBA3A /* Pods_Hangman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hangman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8E352B531C57148A089233 /* Pods_Hangman.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,8 @@
 			children = (
 				839F130F24633A4000354A7B /* Hangman */,
 				839F130E24633A4000354A7B /* Products */,
+				AE4773F868B396A524FCC96F /* Pods */,
+				F3E0915C1D29DA564B1EF414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +242,24 @@
 			path = Strategies;
 			sourceTree = "<group>";
 		};
+		AE4773F868B396A524FCC96F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30D60A897D8301BA7A389629 /* Pods-Hangman.debug.xcconfig */,
+				392B0F686D46F0D77701D5A6 /* Pods-Hangman.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3E0915C1D29DA564B1EF414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB1A58E2B193FC0152DEBA3A /* Pods_Hangman.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839F132124633A4200354A7B /* Build configuration list for PBXNativeTarget "Hangman" */;
 			buildPhases = (
+				46976BDA6AA91564E9239716 /* [CP] Check Pods Manifest.lock */,
 				839F130924633A4000354A7B /* Sources */,
 				839F130A24633A4000354A7B /* Frameworks */,
 				839F130B24633A4000354A7B /* Resources */,
+				A4DBA30C5AE292FEA90D85D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +330,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46976BDA6AA91564E9239716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hangman-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DBA30C5AE292FEA90D85D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangman/Pods-Hangman-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hangman/Pods-Hangman-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hangman/Pods-Hangman-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		839F130924633A4000354A7B /* Sources */ = {
@@ -482,6 +551,7 @@
 		};
 		839F132224633A4200354A7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D60A897D8301BA7A389629 /* Pods-Hangman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +570,7 @@
 		};
 		839F132324633A4200354A7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392B0F686D46F0D77701D5A6 /* Pods-Hangman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
