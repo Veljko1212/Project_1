@@ -29,7 +29,9 @@ class GameVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         title = gameStrategy.title
-        clearUI()
+        gameStrategy.setupQuestion {
+            self.clearUI()
+        }
         
     }
     

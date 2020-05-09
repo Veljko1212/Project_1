@@ -10,6 +10,8 @@
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
+		838F1BA72466BC15006A12D8 /* TwoPlayersStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA62466BC15006A12D8 /* TwoPlayersStrategy.swift */; };
+		838F1BA92466BC43006A12D8 /* UIAplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA82466BC43006A12D8 /* UIAplicationExtensions.swift */; };
 		839F131124633A4000354A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131024633A4000354A7B /* AppDelegate.swift */; };
 		839F131324633A4000354A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131224633A4000354A7B /* SceneDelegate.swift */; };
 		839F131524633A4000354A7B /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F131424633A4000354A7B /* RootVC.swift */; };
@@ -40,6 +42,8 @@
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		838F1BA62466BC15006A12D8 /* TwoPlayersStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoPlayersStrategy.swift; sourceTree = "<group>"; };
+		838F1BA82466BC43006A12D8 /* UIAplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAplicationExtensions.swift; sourceTree = "<group>"; };
 		839F130D24633A4000354A7B /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839F131024633A4000354A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839F131224633A4000354A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			children = (
 				838F1BA02465DB95006A12D8 /* StringExtensions.swift */,
 				838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */,
+				838F1BA82466BC43006A12D8 /* UIAplicationExtensions.swift */,
 			);
 			path = CustomExtensions;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				839F138B2465C90D00354A7B /* GuessingStrategy.swift */,
+				838F1BA62466BC15006A12D8 /* TwoPlayersStrategy.swift */,
 				839F138D2465C97200354A7B /* NormalStrategy.swift */,
 				838F1BA224668EA2006A12D8 /* EasyStrategy.swift */,
 			);
@@ -304,6 +310,7 @@
 				839F138E2465C97200354A7B /* NormalStrategy.swift in Sources */,
 				839F13852465B82000354A7B /* GameStorage.swift in Sources */,
 				839F135B246476CF00354A7B /* Category.swift in Sources */,
+				838F1BA72466BC15006A12D8 /* TwoPlayersStrategy.swift in Sources */,
 				839F13692464858D00354A7B /* CategoryCD+CoreDataClass.swift in Sources */,
 				839F136E2464878700354A7B /* CoreDataStack.swift in Sources */,
 				838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */,
@@ -315,6 +322,7 @@
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
+				838F1BA92466BC43006A12D8 /* UIAplicationExtensions.swift in Sources */,
 				839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */,
 				839F13892465C53500354A7B /* GameVC.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,

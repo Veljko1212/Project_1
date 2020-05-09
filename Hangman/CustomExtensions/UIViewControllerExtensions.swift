@@ -40,4 +40,23 @@ extension UIViewController {
         
     }
     
+    func setupSetWordAlert(handler:@escaping(String)->Void){
+        let alert = UIAlertController(title: "Insert the word to guess", message: "", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.becomeFirstResponder()
+            textField.keyboardType = .namePhonePad
+        }
+        
+        alert.addAction(UIAlertAction(title: "Next", style: .default, handler: { (button) in
+            guard let word = alert.textFields?.first?.text , word != "" else {
+                self.navigationController?.popViewController(animated: true)                
+                return
+            }
+                handler(word)
+
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
 }

@@ -25,5 +25,20 @@ class RootVC: UIViewController {
         navigationController?.navigationBar.isHidden = false
     }
     
+    @IBAction func twoPlayersAction(_ sender: UIButton) {
+        if let viewController = UIStoryboard(name: "OnePlayer", bundle: nil).instantiateViewController(withIdentifier: "GameVC") as? GameVC {
+            if let navigator = navigationController {
+                
+                let gameStrategy = TwoPlayersStrategy()
+                viewController.gameStrategy = gameStrategy
+                gameStrategy.delegate = viewController
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+        
+    }
+    
+    
+    
 }
 
