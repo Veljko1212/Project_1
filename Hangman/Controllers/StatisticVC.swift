@@ -17,6 +17,13 @@ class StatisticVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let numAll = StatsServices.shared.allGamesNum
+        let numWon = StatsServices.shared.wonGames
+        let numLost = StatsServices.shared.lostGames
+        print("All games \(numAll)")
+        print("Won games \(numWon)")
+        print("Lost games \(numLost)")
+        
     }
     
     @IBAction func goTomenuButton(_ sender: Any) {

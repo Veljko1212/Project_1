@@ -59,6 +59,7 @@ class EasyStrategy:GuessingStrategy {
             if goodWordCounter == currentWord.uniqueCount - 1 {
                 deleteWonword()
                 delegate?.gameWon(currentWord)
+                saveWin()
             }
         }
     }
@@ -67,8 +68,17 @@ class EasyStrategy:GuessingStrategy {
         didSet {
             if badWordCounter == 7 {
                 delegate?.gameLost(currentWord)
+                saveLose()
             }
         }
+    }
+    
+    private func saveWin(){
+        StatsServices.shared.wonGamesIncrement()
+    }
+    
+    private func saveLose(){
+        StatsServices.shared.lostGamesIncrement()
     }
     
     var title: String {

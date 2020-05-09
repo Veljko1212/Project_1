@@ -55,6 +55,7 @@ class NormalStrategy:GuessingStrategy {
             if goodWordCounter == currentWord.uniqueCount {
                 deleteWonword()
                 delegate?.gameWon(currentWord)
+                saveWin()
             }
         }
     }
@@ -63,8 +64,17 @@ class NormalStrategy:GuessingStrategy {
         didSet {
             if badWordCounter == 7 {
                 delegate?.gameLost(currentWord)
+                saveLose()
             }
         }
+    }
+    
+    private func saveWin(){
+        StatsServices.shared.wonGamesIncrement()
+    }
+    
+    private func saveLose(){
+        StatsServices.shared.lostGamesIncrement()
     }
     
     
