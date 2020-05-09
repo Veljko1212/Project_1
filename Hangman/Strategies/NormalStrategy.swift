@@ -28,6 +28,7 @@ class NormalStrategy:GuessingStrategy {
         currentWord = word
         badWordCounter = 0
         goodWordCounter = 0
+        handler?()
         
     }
     
@@ -52,8 +53,8 @@ class NormalStrategy:GuessingStrategy {
     private var goodWordCounter: Int = 0 {
         didSet {
             if goodWordCounter == currentWord.uniqueCount {
-                delegate?.gameWon(currentWord)
                 deleteWonword()
+                delegate?.gameWon(currentWord)
             }
         }
     }

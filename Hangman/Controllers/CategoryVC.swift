@@ -32,6 +32,7 @@ class CategoryVC: UIViewController {
             if let gameVC = segue.destination as? GameVC {
                 if let normalStragy = selectedStrategy as? NormalStrategy {
                     gameVC.gameStrategy = normalStragy
+                    normalStragy.delegate = gameVC
                 }
             }
         }
