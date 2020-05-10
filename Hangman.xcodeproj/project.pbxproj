@@ -10,6 +10,7 @@
 		834C799424672CBD00A70C14 /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C799324672CBD00A70C14 /* StatisticVC.swift */; };
 		834C79962467337A00A70C14 /* StatsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79952467337A00A70C14 /* StatsServices.swift */; };
 		834C799A24673FDF00A70C14 /* PieChartViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */; };
+		834C799D246803F800A70C14 /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C799B246803F800A70C14 /* Statistic.storyboard */; };
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
@@ -48,6 +49,7 @@
 		834C799324672CBD00A70C14 /* StatisticVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
 		834C79952467337A00A70C14 /* StatsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsServices.swift; sourceTree = "<group>"; };
 		834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewExtensions.swift; sourceTree = "<group>"; };
+		834C799C246803F800A70C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Statistic.storyboard; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		839F132624633A8A00354A7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				834C799B246803F800A70C14 /* Statistic.storyboard */,
 				839F13762465A95800354A7B /* OnePlayer.storyboard */,
 				839F13712465A3B300354A7B /* CategoryViewCell */,
 				839F131624633A4000354A7B /* Main.storyboard */,
@@ -331,6 +334,7 @@
 				839F131824633A4000354A7B /* Main.storyboard in Resources */,
 				839F13782465A95800354A7B /* OnePlayer.storyboard in Resources */,
 				839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */,
+				834C799D246803F800A70C14 /* Statistic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		834C799B246803F800A70C14 /* Statistic.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834C799C246803F800A70C14 /* Base */,
+			);
+			name = Statistic.storyboard;
+			sourceTree = "<group>";
+		};
 		839F131624633A4000354A7B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
