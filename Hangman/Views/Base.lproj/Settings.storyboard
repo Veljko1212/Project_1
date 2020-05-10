@@ -9,7 +9,7 @@
         <!--Settings-->
         <scene sceneID="WyL-c8-5BV">
             <objects>
-                <tableViewController id="sbN-h5-Xdq" sceneMemberID="viewController">
+                <tableViewController id="sbN-h5-Xdq" customClass="SettingsVC" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="nAQ-Js-vcD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="neu-ds-qpg">
                                                     <rect key="frame" x="345" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <connections>
+                                                        <action selector="musicOnOff:" destination="sbN-h5-Xdq" eventType="valueChanged" id="mru-Nd-kqr"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-rA-deD">
                                                     <rect key="frame" x="20" y="11.666666666666664" width="82.666666666666671" height="21"/>
@@ -60,6 +63,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8tb-Gc-l8Y">
                                                     <rect key="frame" x="345" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <connections>
+                                                        <action selector="notificationOnOff:" destination="sbN-h5-Xdq" eventType="valueChanged" id="uCc-Fa-InL"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -120,6 +126,9 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-yQ-QzI">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <connections>
+                                                        <action selector="clearStats:" destination="sbN-h5-Xdq" eventType="touchUpInside" id="TS5-dl-d44"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -185,12 +194,19 @@
                     <navigationItem key="navigationItem" title="Settings" id="69T-zp-kEE">
                         <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.left.fill" catalog="system" id="EGL-Hd-ynq">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="menuButton:" destination="sbN-h5-Xdq" id="i8u-s4-GiI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="notification" destination="8tb-Gc-l8Y" id="cib-kI-Udn"/>
+                        <outlet property="sound" destination="neu-ds-qpg" id="j19-dc-Uid"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uC-kL-WMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="844"/>
+            <point key="canvasLocation" x="2589.8550724637685" y="843.75000000000011"/>
         </scene>
     </scenes>
     <resources>

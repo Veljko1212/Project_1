@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameVC: UIViewController {
     
     var gameStrategy:GuessingStrategy!
+    var audioService = AudioService()
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet var images: [UIImageView]!
@@ -36,11 +38,13 @@ class GameVC: UIViewController {
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
+        self.audioService.playSound(sound: .win)
         setupButtonOnClick(button: sender)
         
         let letter = Character(sender.currentTitle!)
         gameStrategy.checkPressedLetter(letter) { (errorNumber) in
             self.setupImagesByErrors(errorCount: errorNumber)
+            self.audioService.playSound(sound: .lose)
         }
         result = gameStrategy.result
         
@@ -82,6 +86,7 @@ class GameVC: UIViewController {
 extension GameVC: StrategyDelegate {
     
     func gameWon(_ currentWord: Word) {
+        self.audioService.playSound(sound: .passed)
         self.setupAlert(type: .win, word: currentWord) {
             self.gameStrategy.setupQuestion {
                 self.clearUI()
@@ -90,6 +95,7 @@ extension GameVC: StrategyDelegate {
     }
     
     func gameLost(_ currentWord: Word) {
+        self.audioService.playSound(sound: .hanged)
         self.setupAlert(type: .lose, word: currentWord) {
             self.gameStrategy.setupQuestion {
                 self.clearUI()

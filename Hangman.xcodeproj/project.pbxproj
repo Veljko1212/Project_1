@@ -12,6 +12,13 @@
 		834C799A24673FDF00A70C14 /* PieChartViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */; };
 		834C799D246803F800A70C14 /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C799B246803F800A70C14 /* Statistic.storyboard */; };
 		834C79A22468090400A70C14 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834C79A02468090400A70C14 /* Settings.storyboard */; };
+		834C79A424680F4D00A70C14 /* AudioServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79A324680F4D00A70C14 /* AudioServices.swift */; };
+		834C79A624680F8500A70C14 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79A524680F8500A70C14 /* AppSettings.swift */; };
+		834C79AA2468106000A70C14 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79A92468106000A70C14 /* SettingsVC.swift */; };
+		834C79AE246814B100A70C14 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 834C79AC246814B100A70C14 /* lose.wav */; };
+		834C79AF246814B100A70C14 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 834C79AD246814B100A70C14 /* win.wav */; };
+		834C79B22468165A00A70C14 /* hanged.wav in Resources */ = {isa = PBXBuildFile; fileRef = 834C79B02468165A00A70C14 /* hanged.wav */; };
+		834C79B32468165A00A70C14 /* passed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 834C79B12468165A00A70C14 /* passed.wav */; };
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
@@ -52,6 +59,13 @@
 		834C799924673FDF00A70C14 /* PieChartViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewExtensions.swift; sourceTree = "<group>"; };
 		834C799C246803F800A70C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Statistic.storyboard; sourceTree = "<group>"; };
 		834C79A12468090400A70C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		834C79A324680F4D00A70C14 /* AudioServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioServices.swift; sourceTree = "<group>"; };
+		834C79A524680F8500A70C14 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		834C79A92468106000A70C14 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		834C79AC246814B100A70C14 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		834C79AD246814B100A70C14 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		834C79B02468165A00A70C14 /* hanged.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hanged.wav; sourceTree = "<group>"; };
+		834C79B12468165A00A70C14 /* passed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = passed.wav; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -98,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834C79AB2468149F00A70C14 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				834C79B12468165A00A70C14 /* passed.wav */,
+				834C79B02468165A00A70C14 /* hanged.wav */,
+				834C79AC246814B100A70C14 /* lose.wav */,
+				834C79AD246814B100A70C14 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		838F1B9F2465DB4F006A12D8 /* CustomExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +184,7 @@
 				839F131424633A4000354A7B /* RootVC.swift */,
 				839F136F2465A0A200354A7B /* CategoryVC.swift */,
 				834C799324672CBD00A70C14 /* StatisticVC.swift */,
+				834C79A92468106000A70C14 /* SettingsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +205,7 @@
 		839F132724633A9500354A7B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				834C79AB2468149F00A70C14 /* Sounds */,
 				839F131924633A4200354A7B /* Assets.xcassets */,
 				839F1356246474D200354A7B /* Categories.json */,
 				839F131E24633A4200354A7B /* Info.plist */,
@@ -239,6 +266,8 @@
 			children = (
 				839F13842465B82000354A7B /* GameStorage.swift */,
 				834C79952467337A00A70C14 /* StatsServices.swift */,
+				834C79A324680F4D00A70C14 /* AudioServices.swift */,
+				834C79A524680F8500A70C14 /* AppSettings.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -332,11 +361,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				839F131D24633A4200354A7B /* LaunchScreen.storyboard in Resources */,
+				834C79B32468165A00A70C14 /* passed.wav in Resources */,
 				839F1357246474D200354A7B /* Categories.json in Resources */,
 				839F131A24633A4200354A7B /* Assets.xcassets in Resources */,
+				834C79AF246814B100A70C14 /* win.wav in Resources */,
 				834C79A22468090400A70C14 /* Settings.storyboard in Resources */,
+				834C79B22468165A00A70C14 /* hanged.wav in Resources */,
 				839F131824633A4000354A7B /* Main.storyboard in Resources */,
 				839F13782465A95800354A7B /* OnePlayer.storyboard in Resources */,
+				834C79AE246814B100A70C14 /* lose.wav in Resources */,
 				839F13752465A3C700354A7B /* CollectionViewCell.xib in Resources */,
 				834C799D246803F800A70C14 /* Statistic.storyboard in Resources */,
 			);
@@ -393,6 +426,7 @@
 			files = (
 				839F135524646C3300354A7B /* CustomButton.swift in Sources */,
 				839F138E2465C97200354A7B /* NormalStrategy.swift in Sources */,
+				834C79A624680F8500A70C14 /* AppSettings.swift in Sources */,
 				839F13852465B82000354A7B /* GameStorage.swift in Sources */,
 				839F135B246476CF00354A7B /* Category.swift in Sources */,
 				838F1BA72466BC15006A12D8 /* TwoPlayersStrategy.swift in Sources */,
@@ -411,10 +445,12 @@
 				834C799424672CBD00A70C14 /* StatisticVC.swift in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				838F1BA92466BC43006A12D8 /* UIAplicationExtensions.swift in Sources */,
+				834C79A424680F4D00A70C14 /* AudioServices.swift in Sources */,
 				839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */,
 				839F13892465C53500354A7B /* GameVC.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 				839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */,
+				834C79AA2468106000A70C14 /* SettingsVC.swift in Sources */,
 				839F135C246476CF00354A7B /* Word.swift in Sources */,
 				838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */,
 			);
