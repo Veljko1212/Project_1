@@ -52,11 +52,23 @@ extension UIViewController {
                 self.navigationController?.popViewController(animated: true)                
                 return
             }
-                handler(word)
-
+            handler(word)
+            
         }))
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    func clearStatssetupAlert(handler:@escaping()->Void) {
+        let alert = UIAlertController(title: "Are u sure u want clear stats?", message: "This action cannot be undo", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Clear", style: .default, handler: { (_) in
+            handler()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
+            
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

@@ -46,9 +46,9 @@ class StatsServices {
     }
     
     func saveStats() {
-        userDefaults.setValue(StatsServices.shared.allGamesNum, forKey: DefaultsKeys.allGames.rawValue)
-        userDefaults.setValue(StatsServices.shared.wonGames, forKey: DefaultsKeys.wonGames.rawValue)
-        userDefaults.setValue(StatsServices.shared.lostGames, forKey: DefaultsKeys.lostGames.rawValue)
+        userDefaults.setValue(allGamesNum, forKey: DefaultsKeys.allGames.rawValue)
+        userDefaults.setValue(wonGames, forKey: DefaultsKeys.wonGames.rawValue)
+        userDefaults.setValue(lostGames, forKey: DefaultsKeys.lostGames.rawValue)
     }
     
     func loadStats() {

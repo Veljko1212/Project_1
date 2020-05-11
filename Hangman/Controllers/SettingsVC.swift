@@ -46,7 +46,9 @@ class SettingsVC: UITableViewController {
     }
     
     @IBAction func clearStats(_ sender: UIButton) {
-        
+        self.clearStatssetupAlert {
+            StatsServices.shared.clear()
+        }
     }
     
     
