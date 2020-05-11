@@ -21,6 +21,10 @@ class CategoryVC: UIViewController {
         let nibCell = UINib(nibName: cellIdentifier, bundle: nil)
         collectionView.register(nibCell, forCellWithReuseIdentifier: cellIdentifier)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = AppSettings.shared.themeColor
+    }
     
     
     @IBAction func menuButton(_ sender: UIBarButtonItem) {

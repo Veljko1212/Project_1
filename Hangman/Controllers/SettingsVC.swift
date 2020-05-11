@@ -54,6 +54,8 @@ class SettingsVC: UITableViewController {
     
     func updateUI() {
         sound.isOn = AppSettings.shared.soundOn
+        sound.onTintColor = AppSettings.shared.themeColor
+        notification.onTintColor = AppSettings.shared.themeColor
     }
     
 }

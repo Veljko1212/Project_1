@@ -18,6 +18,7 @@ class AppSettings {
     
     private struct Keys {
         static let sound = "sound"
+        static let color = "color"
     }
     
     var soundOn:Bool {
@@ -26,6 +27,15 @@ class AppSettings {
         }
         set {
             return userDefaults.set(newValue, forKey: Keys.sound)
+        }
+    }
+    
+    var themeColor:UIColor {
+        get {
+            return userDefaults.colorForKey(key: Keys.color) ?? #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        }
+        set {
+            return userDefaults.setColor(color: newValue, forKey: Keys.color)
         }
     }
 

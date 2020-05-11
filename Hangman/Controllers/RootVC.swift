@@ -18,6 +18,7 @@ class RootVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        view.backgroundColor = AppSettings.shared.themeColor
     }
     
     override func viewWillDisappear(_ animated: Bool) {

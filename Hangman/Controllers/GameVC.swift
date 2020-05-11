@@ -36,6 +36,10 @@ class GameVC: UIViewController {
         }
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = AppSettings.shared.themeColor
+    }
     
     @IBAction func buttonAction(_ sender: UIButton) {
         self.audioService.playSound(sound: .win)
