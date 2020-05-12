@@ -170,6 +170,9 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-AZ-fYs">
                                                     <rect key="frame" x="20" y="10" width="374" height="24"/>
+                                                    <connections>
+                                                        <segue destination="N8d-9v-n15" kind="show" id="be5-fn-az5"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -265,8 +268,87 @@
             </objects>
             <point key="canvasLocation" x="3403" y="844"/>
         </scene>
+        <!--AboutVC-->
+        <scene sceneID="aWs-5Q-BZn">
+            <objects>
+                <viewController id="N8d-9v-n15" customClass="AboutVC" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yhw-Vf-INm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="qYx-lY-jkQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dsD-Se-syj" appends="YES" id="WF2-86-j8U"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Hangman app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmg-et-J6s">
+                                <rect key="frame" x="78" y="94" width="258" height="34.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-2c-ZH1">
+                                <rect key="frame" x="159.66666666666666" y="148.66666666666666" width="94.666666666666657" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veljko Milosevic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-Dw-mjR">
+                                <rect key="frame" x="98.333333333333329" y="187.66666666666666" width="217.33333333333337" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on screen to close page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh6-IF-jzG">
+                                <rect key="frame" x="20" y="675" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mh6-IF-jzG" firstAttribute="leading" secondItem="LXN-ST-f3a" secondAttribute="leading" constant="20" id="2fz-wJ-YzW"/>
+                            <constraint firstItem="qYx-lY-jkQ" firstAttribute="top" secondItem="Yhw-Vf-INm" secondAttribute="top" id="367-yU-d9k"/>
+                            <constraint firstItem="LXN-ST-f3a" firstAttribute="bottom" secondItem="Mh6-IF-jzG" secondAttribute="bottom" constant="20" id="3Lz-0g-VjC"/>
+                            <constraint firstItem="KXc-2c-ZH1" firstAttribute="centerY" secondItem="qYx-lY-jkQ" secondAttribute="centerY" constant="-200" id="Jz4-mK-xuX"/>
+                            <constraint firstItem="qYx-lY-jkQ" firstAttribute="trailing" secondItem="LXN-ST-f3a" secondAttribute="trailing" id="L4B-HK-b8o"/>
+                            <constraint firstItem="LXN-ST-f3a" firstAttribute="trailing" secondItem="Mh6-IF-jzG" secondAttribute="trailing" constant="20" id="Ps1-g0-uO8"/>
+                            <constraint firstItem="YlB-Dw-mjR" firstAttribute="centerX" secondItem="qYx-lY-jkQ" secondAttribute="centerX" id="R81-O6-imn"/>
+                            <constraint firstItem="qYx-lY-jkQ" firstAttribute="leading" secondItem="LXN-ST-f3a" secondAttribute="leading" id="YbM-Ew-0QY"/>
+                            <constraint firstAttribute="bottom" secondItem="qYx-lY-jkQ" secondAttribute="bottom" id="Zlh-z9-TJq"/>
+                            <constraint firstItem="YlB-Dw-mjR" firstAttribute="top" secondItem="KXc-2c-ZH1" secondAttribute="bottom" constant="20" id="bKx-Wd-QdS"/>
+                            <constraint firstItem="KXc-2c-ZH1" firstAttribute="centerX" secondItem="qYx-lY-jkQ" secondAttribute="centerX" id="cm5-6g-jqm"/>
+                            <constraint firstItem="KXc-2c-ZH1" firstAttribute="top" secondItem="kmg-et-J6s" secondAttribute="bottom" constant="20" id="hgO-bi-pj5"/>
+                            <constraint firstItem="kmg-et-J6s" firstAttribute="centerX" secondItem="qYx-lY-jkQ" secondAttribute="centerX" id="yl7-hg-ciP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LXN-ST-f3a"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mw8-rO-gBC"/>
+                    <connections>
+                        <outlet property="appNameConsCenterX" destination="yl7-hg-ciP" id="kOe-Og-dqj"/>
+                        <outlet property="appNameLabel" destination="kmg-et-J6s" id="dL6-dh-2x7"/>
+                        <outlet property="designedByConsCenterX" destination="cm5-6g-jqm" id="RV1-JR-aCY"/>
+                        <outlet property="designedByLabel" destination="KXc-2c-ZH1" id="H2X-Wr-HZJ"/>
+                        <outlet property="programmerConsCenterX" destination="R81-O6-imn" id="JLZ-mm-Xfv"/>
+                        <outlet property="programmerLabel" destination="YlB-Dw-mjR" id="vGL-Rg-eTe"/>
+                        <outlet property="tapScreenLabel" destination="Mh6-IF-jzG" id="99p-cd-in3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2E-3N-gWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dsD-Se-syj">
+                    <connections>
+                        <action selector="handleTap:" destination="N8d-9v-n15" id="vUW-5Y-m0r"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2590" y="1567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <image name="space" width="1366" height="768"/>
     </resources>
 </document>

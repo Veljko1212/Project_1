@@ -23,6 +23,7 @@
 		834C79DD24686EC400A70C14 /* ChoseThemeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79DC24686EC400A70C14 /* ChoseThemeVC.swift */; };
 		834C79E124686F2100A70C14 /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79DF24686F2100A70C14 /* ColorViewCell.swift */; };
 		834C79E224686F2100A70C14 /* ColorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834C79E024686F2100A70C14 /* ColorViewCell.xib */; };
+		834C79E42469652400A70C14 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79E32469652400A70C14 /* AboutVC.swift */; };
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
@@ -74,6 +75,7 @@
 		834C79DC24686EC400A70C14 /* ChoseThemeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoseThemeVC.swift; sourceTree = "<group>"; };
 		834C79DF24686F2100A70C14 /* ColorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
 		834C79E024686F2100A70C14 /* ColorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewCell.xib; sourceTree = "<group>"; };
+		834C79E32469652400A70C14 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		839F132524633A6000354A7B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				834C79E32469652400A70C14 /* AboutVC.swift */,
 				839F13882465C53500354A7B /* GameVC.swift */,
 				839F131424633A4000354A7B /* RootVC.swift */,
 				839F136F2465A0A200354A7B /* CategoryVC.swift */,
@@ -465,6 +468,7 @@
 				839F138C2465C90D00354A7B /* GuessingStrategy.swift in Sources */,
 				839F135F24647A2A00354A7B /* Hangman.xcdatamodeld in Sources */,
 				838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */,
+				834C79E42469652400A70C14 /* AboutVC.swift in Sources */,
 				834C799424672CBD00A70C14 /* StatisticVC.swift in Sources */,
 				839F131124633A4000354A7B /* AppDelegate.swift in Sources */,
 				838F1BA92466BC43006A12D8 /* UIAplicationExtensions.swift in Sources */,
