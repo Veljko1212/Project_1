@@ -11,6 +11,8 @@ import UIKit
 
 class SettingsVC: UITableViewController {
     
+    let notifications = NotificationServices()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,21 +27,17 @@ class SettingsVC: UITableViewController {
         let state = sender.isOn
         AppSettings.shared.soundOn = state
         tableView.reloadData()
-        
     }
+    
     @IBAction func notificationOnOff(_ sender: UISwitch) {
-        
+        notifications.showNotification(value: sender.isOn)
     }
     
-    
-   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.tableFooterView = UIView(frame: .zero)
         updateUI()
     }
-    
-    
     
     @IBAction func menuButton(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
@@ -51,13 +49,11 @@ class SettingsVC: UITableViewController {
         }
     }
     
-    
-    
-    
     func updateUI() {
         sound.isOn = AppSettings.shared.soundOn
         sound.onTintColor = AppSettings.shared.themeColor
         notification.onTintColor = AppSettings.shared.themeColor
+        notification.isOn = AppSettings.shared.notificationsOn
     }
     
 }

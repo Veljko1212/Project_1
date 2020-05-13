@@ -13,6 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let coreDataStack = CoreDataStack(modelName: "Hangman")
+    let notifications = NotificationServices()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         saveJsonToCoreData(toSave: categories)
         GameStorage.shared.categories = coreDataStack.fetch(object: CategoryCD.self)
         StatsServices.shared.loadStats()
+        notifications.askForPermission()
         return true
     }
     

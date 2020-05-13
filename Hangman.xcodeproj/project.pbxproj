@@ -24,6 +24,7 @@
 		834C79E124686F2100A70C14 /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79DF24686F2100A70C14 /* ColorViewCell.swift */; };
 		834C79E224686F2100A70C14 /* ColorViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834C79E024686F2100A70C14 /* ColorViewCell.xib */; };
 		834C79E42469652400A70C14 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79E32469652400A70C14 /* AboutVC.swift */; };
+		834C79EC246C598400A70C14 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C79EB246C598400A70C14 /* NotificationServices.swift */; };
 		838F1BA12465DB95006A12D8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA02465DB95006A12D8 /* StringExtensions.swift */; };
 		838F1BA324668EA2006A12D8 /* EasyStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA224668EA2006A12D8 /* EasyStrategy.swift */; };
 		838F1BA5246692FC006A12D8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */; };
@@ -76,6 +77,7 @@
 		834C79DF24686F2100A70C14 /* ColorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
 		834C79E024686F2100A70C14 /* ColorViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewCell.xib; sourceTree = "<group>"; };
 		834C79E32469652400A70C14 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		834C79EB246C598400A70C14 /* NotificationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
 		838F1BA02465DB95006A12D8 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		838F1BA224668EA2006A12D8 /* EasyStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStrategy.swift; sourceTree = "<group>"; };
 		838F1BA4246692FC006A12D8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		839F13832465B80E00354A7B /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				834C79EB246C598400A70C14 /* NotificationServices.swift */,
 				839F13842465B82000354A7B /* GameStorage.swift */,
 				834C79952467337A00A70C14 /* StatsServices.swift */,
 				834C79A324680F4D00A70C14 /* AudioServices.swift */,
@@ -476,6 +479,7 @@
 				834C79DD24686EC400A70C14 /* ChoseThemeVC.swift in Sources */,
 				839F13742465A3C700354A7B /* CollectionViewCell.swift in Sources */,
 				839F13892465C53500354A7B /* GameVC.swift in Sources */,
+				834C79EC246C598400A70C14 /* NotificationServices.swift in Sources */,
 				839F131324633A4000354A7B /* SceneDelegate.swift in Sources */,
 				839F136A2464858D00354A7B /* CategoryCD+CoreDataProperties.swift in Sources */,
 				834C79AA2468106000A70C14 /* SettingsVC.swift in Sources */,

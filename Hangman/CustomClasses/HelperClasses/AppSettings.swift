@@ -19,6 +19,8 @@ class AppSettings {
     private struct Keys {
         static let sound = "sound"
         static let color = "color"
+        static let notification = "notification"
+        static let firstLaunch = "firstLaunch"
     }
     
     var soundOn:Bool {
@@ -36,6 +38,24 @@ class AppSettings {
         }
         set {
             return userDefaults.setColor(color: newValue, forKey: Keys.color)
+        }
+    }
+    
+    var notificationsOn:Bool {
+        get {
+            return userDefaults.bool(forKey: Keys.notification)
+        }
+        set {
+            return userDefaults.set(newValue, forKey: Keys.notification)
+        }
+    }
+    
+    var isFirstLaunch:Bool {
+        get {
+            return userDefaults.bool(forKey: Keys.firstLaunch)
+        }
+        set {
+            return userDefaults.set(newValue, forKey: Keys.firstLaunch)
         }
     }
 
