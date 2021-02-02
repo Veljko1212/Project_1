@@ -34,11 +34,16 @@ class GameVC: UIViewController {
         gameStrategy.setupQuestion {
             self.clearUI()
         }
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.backgroundColor = AppSettings.shared.themeColor
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        StatsServices.shared.saveStats()
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -46,9 +51,9 @@ class GameVC: UIViewController {
         setupButtonOnClick(button: sender)
         
         let letter = Character(sender.currentTitle!)
-        gameStrategy.checkPressedLetter(letter) { (errorNumber) in
-            self.setupImagesByErrors(errorCount: errorNumber)
-            self.audioService.playSound(sound: .lose)
+        gameStrategy.checkPressedLetter(letter) { [weak self] (errorNumber) in
+            self?.setupImagesByErrors(errorCount: errorNumber)
+            self?.audioService.playSound(sound: .lose)
         }
         result = gameStrategy.result
         

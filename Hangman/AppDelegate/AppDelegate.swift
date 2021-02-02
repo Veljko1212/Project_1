@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func loadJson(from fileName:String , ofType type:String) -> [Category] {
+   private func loadJson(from fileName:String , ofType type:String) -> [Category] {
         if let path = Bundle.main.path(forResource: fileName, ofType: type) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return []
     }
     
-    func saveJsonToCoreData(toSave categoryArray:[Category]) {
+   private func saveJsonToCoreData(toSave categoryArray:[Category]) {
         
         let fetchRequest: NSFetchRequest<CategoryCD> = CategoryCD.fetchRequest()
         let count = try! coreDataStack.managedContext.count(for: fetchRequest)
@@ -66,7 +66,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         coreDataStack.saveContext()
-        
     }
 
     // MARK: UISceneSession Lifecycle
